@@ -3,6 +3,9 @@
 
 
 @import 'base/variables';
+@import 'base/mixins';
+
+
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -14,3 +17,9 @@
     max-width: 1140px;
     margin: 0 auto;
 }
+
+
+
+@import 'blocks/promo/promo';
+@import 'blocks/title/title';
+@import 'blocks/buttons/buttons';
