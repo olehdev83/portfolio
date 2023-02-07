@@ -13,17 +13,17 @@
         z-index: 0;
     }
     &__btns{
-        color: #000;
+        color: $text-color;
         display: flex;
         align-items: center;
         gap: 44px;
         margin-top: 26px;
     }
     &__link{
-        color: #000;
+        color: $text-color;
         font-weight: 700;
         &:hover{
-            color: #000;
+            color: $text-color;
             text-decoration: none;
         }
     }
