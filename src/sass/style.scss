@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6{
     width: 60px;
     height: 3px;
     background-color: $main_color;
-    margin-top: 24px;
+    margin: 25px auto;
 }
 
 @import 'blocks/promo/promo';
@@ -33,3 +33,4 @@ h1, h2, h3, h4, h5, h6{
 @import 'blocks/buttons/buttons';
 @import 'blocks/menu/menu';
 @import 'blocks/about/about';
+@import 'blocks/experience/experience';
