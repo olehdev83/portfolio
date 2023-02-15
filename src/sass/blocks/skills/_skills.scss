@@ -13,4 +13,30 @@
     &__subtitle{
         text-align: center;
     }
+    &__wrapper{
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns:repeat(4, minmax(207px, auto));
+        grid-template-rows: repeat(2, minmax(270px auto));
+        grid-auto-rows: minmax(270px auto);
+        gap: 13px;
+    }
+    &__cart{
+        padding: 30px 30px 25px 30px;
+        border: 1px solid #000000;
+        &-icon{
+            min-height: 64px;
+        }
+        
+        &-title{
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-top: 20px;
+        }
+        &-desc{
+            font-size: 12px;
+            line-height: 18px;
+            margin-top: 15px;
+        }
+    }
 }
