@@ -14,3 +14,10 @@ close.addEventListener('click', () => {
     menu.classList.remove('active');
 });
 
+// Автоматический пересчет процентов
+const counters = document.querySelectorAll('.skills__retings-counter'),
+      scales = document.querySelectorAll('.skills__retings-scale span');
+
+counters.forEach( (item, i) => {
+    scales[i].style.width = item.innerHTML;
+});
