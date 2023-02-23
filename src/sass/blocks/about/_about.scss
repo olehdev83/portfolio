@@ -2,7 +2,7 @@
     padding-top: 120px;
     &__wrapper{
         display: grid;
-        grid-template-columns: 400px 710px;
+        grid-template-columns: 400px 620px;
         grid-template-rows: minmax(243px, auto) minmax(136px, auto);
         grid-auto-rows: minmax(243px, auto);
         column-gap: 70px;
@@ -21,11 +21,13 @@
         }
     }
     &__title{
-        min-width: 990px;
         position: relative;
         left: 6px;
         padding-top: 1px;
         @include before_circle;
+        &:before{
+            right: 96%;
+        }
     }
     &__subtitle{
         margin-top: 12px;
@@ -38,8 +40,7 @@
     }
     &__skills{
         display: grid;
-        grid-template-columns: repeat(2, minmax(116px, auto));
-        grid-template-rows: repeat(2, 260px, auto);
+        grid-template: repeat(2, minmax(116px, auto)) / repeat(2, 260px);
         grid-auto-rows: 1fr;
         column-gap: 50px;
         row-gap: 20px;
