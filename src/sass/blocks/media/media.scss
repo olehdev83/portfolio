@@ -22,12 +22,18 @@
 			}
 		}
 	}
+	.experience{
+		&__wrapper{
+			padding: 40px 0 0 0;
+			grid-template-columns: repeat(2,385px);
+		}
+	}
 }
 @media(max-width: 992px){
 	.container{
 		max-width: 720px;
 	}
-	.title {
+	.title{
 		&_fz36{
 			font-size: 30px;
 		}
@@ -56,6 +62,13 @@
 				grid-template-columns: 40px 300px;
 				column-gap:20px;
 			}
+		}
+	}
+	.experience{
+		&__wrapper{
+			grid-template-columns: 385px;
+    		justify-content: center;
+    		row-gap: 40px;
 		}
 	}
 }
@@ -153,5 +166,22 @@
 		&__skills{
 			grid-template-columns: 100%;
 		}
+	}
+	.experience{
+		padding-top: 40px;
+		.line{
+			margin: 0 auto;
+		}
+			&__wrapper{
+				padding: 40px 0 0 0;
+				grid-template-columns: 320px;
+    			row-gap: 40px;
+			&__item{
+				&-body{
+					padding: 10px 0 0 63px;
+				}
+			}
+		}
+		
 	}
 }
