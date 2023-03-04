@@ -35,6 +35,28 @@
 			grid-template-columns: repeat(2,minmax(280px,auto));
 		}
 	}
+	.portfolio{
+		padding-top: 40px;
+		.line{
+			margin: 15px auto;
+		}
+		.title{
+			&__section{
+				&-subtitle{
+					margin-top: 20px;
+				}
+			}
+		}
+		&__wrapper{
+			grid-template: 280px / 280px;
+			gap: 20px;
+			justify-content: center;
+			.horizontal, .vertical {
+                grid-row: unset;
+                grid-column: unset;
+            }
+		}
+	}
 }
 @media(max-width: 992px){
 	.container{
