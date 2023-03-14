@@ -6,6 +6,7 @@
         display: grid;
         grid-template-columns: repeat(2, 417px);
         column-gap: 153px;
+        justify-content: center;
     }
     &__column{
         &-title{
